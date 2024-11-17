@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Memory Game</title>
-  <link rel="stylesheet" href="styles.css">
+    <!-- Basic Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Numeria is a fun, memory-based game where you uncover numbers in order from 1 to 25. Test your memory, challenge yourself, and enjoy this simple, addictive game!">
+    <meta name="keywords"
+        content="Numeria, memory game, number game, fun game, memory challenge, HTML game, JavaScript game, casual game">
+    <meta name="author" content="Ronit Kaushal">
+
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Numeria - The Fun Memory Challenge Game">
+    <meta property="og:description"
+        content="Uncover numbers in the correct order and challenge your memory in this simple, fun game created by Ronit Kaushal!">
+    <meta property="og:image" content="https://ronitkaushal.github.io/numeria/Numeria.png">
+    <meta property="og:url" content="https://ronitkaushal.github.io/numeria">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="fav.png" type="image/x-icon">
+
+    <!-- Page Title -->
+    <title>Numeria - Fun Memory-Based Game</title>
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://ronitkaushal.github.io/numeria">
+
+    <!-- Robots Metadata -->
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript Link -->
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-  <div class="logo">
-    <img src="Numeria.png">
-  </div>
-  <p>
-    In Numeria, uncover numbers 1 to 25 in order. Wrong picks hide all numbers, and you restart from 1. Remember positions to reveal all numbers and win!
-  </p>
-  <div id="grid-container"></div>
-
-  <div class="btn-container">
-
-  <button id="restart">Restart</button>
-  <button class="about-btn">About</button>
-  
-</div>
-<div class="about-container hidden">
-  <div class="about-content">
     <div class="logo">
         <img src="Numeria.png">
-      </div>
-    <p class="about-desc">
-        Hi! I'm Ronit Kaushal, and I made this game for fun and to challenge your memory. The idea came from my dad. It’s a simple yet tricky game where you find numbers in the right order. Mess up, and you start again! Keep playing, have fun, and see if you can beat it. Good luck! 😊</p>
-    <button class="close-btn">Close</button>
-  </div>
-</div>
+    </div>
+    <p>
+        In Numeria, uncover numbers 1 to 25 in order. Wrong picks hide all numbers, and you restart from 1. Remember
+        positions to reveal all numbers and win!
+    </p>
+    <div id="grid-container"></div>
+
+    <div class="btn-container">
+
+        <button id="restart">Restart</button>
+        <button class="about-btn">About</button>
+
+    </div>
+    <div class="about-container hidden">
+        <div class="about-content">
+            <div class="logo">
+                <img src="Numeria.png">
+            </div>
+            <p class="about-desc">
+                Hi! I'm Ronit Kaushal, and I made this game for fun and to challenge your memory. The idea came from my
+                dad. It’s a simple yet tricky game where you find numbers in the right order. Mess up, and you start
+                again! Keep playing, have fun, and see if you can beat it. Good luck! 😊</p>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
 
 
 
-  <!-- ------------------------ -->
-  <div id="notification" class="notification"></div>
-  <script src="script.js"></script>
+    <!-- ------------------------ -->
+    <div id="notification" class="notification"></div>
+    <script src="script.js"></script>
 </body>
+
 </html>
