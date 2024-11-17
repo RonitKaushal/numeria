@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Memory Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="Numeria.png">
+  </div>
+  <p>
+    In Numeria, uncover numbers 1 to 25 in order. Wrong picks hide all numbers, and you restart from 1. Remember positions to reveal all numbers and win!
+  </p>
+  <div id="grid-container"></div>
+
+  <div class="btn-container">
+
+  <button id="restart">Restart</button>
+  <button class="about-btn">About</button>
+  
+</div>
+<div class="about-container hidden">
+  <div class="about-content">
+    <div class="logo">
+        <img src="Numeria.png">
+      </div>
+    <p class="about-desc">
+        Hi! I'm Ronit Kaushal, and I made this game for fun and to challenge your memory. The idea came from my dad. It’s a simple yet tricky game where you find numbers in the right order. Mess up, and you start again! Keep playing, have fun, and see if you can beat it. Good luck! 😊</p>
+    <button class="close-btn">Close</button>
+  </div>
+</div>
+
+
+
+  <!-- ------------------------ -->
+  <div id="notification" class="notification"></div>
+  <script src="script.js"></script>
+</body>
+</html>
