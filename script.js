@@ -12,11 +12,15 @@ function initGame() {
 
   numbers.forEach((num) => {
     const gridItem = document.createElement("div");
-    gridItem.classList.add("grid-item", "hidden");
+    gridItem.classList.add("grid-item");
     gridItem.textContent = num;
     gridItem.dataset.number = num;
     gridItem.addEventListener("click", () => handleNumberClick(num, gridItem));
     gridContainer.appendChild(gridItem);
+
+    setTimeout(() => {
+      gridItem.classList.add("grid-item", "hidden");
+    }, 5000);
   });
 
   showNotification("Game started! Select numbers in sequence.", "info");
@@ -24,6 +28,8 @@ function initGame() {
 
 // Handle number click
 function handleNumberClick(num, element) {
+
+
   if (num === currentNumber) {
     element.classList.remove("hidden");
     currentNumber++;
@@ -31,8 +37,16 @@ function handleNumberClick(num, element) {
       showNotification("Congratulations! You've won!", "success");
     }
   } else {
-    showNotification("Wrong number! Restarting!", "error");
-    resetGame();
+
+    element.classList.remove("hidden");
+    element.classList.add("wrong");
+   
+    setTimeout(() => {
+      element.classList.add("hidden");
+      element.classList.remove("wrong");
+      showNotification("Wrong number! Restarting!", "error");
+      resetGame();
+    }, 1000);
   }
 }
 
@@ -63,6 +77,8 @@ restartButton.addEventListener("click", initGame);
 // Start the game on load
 initGame();
 
+
+// ///////////////////////////////////////////////////////////////////////////////
 
 const aboutButton = document.getElementsByClassName("about-btn")[0];
 const aboutContainer = document.getElementsByClassName("about-container")[0];

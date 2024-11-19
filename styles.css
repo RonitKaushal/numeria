@@ -56,6 +56,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.546);
     border-radius: 10px;
     user-select: none;
+    transition: 0.5s;
+  }
+  .wrong
+  {
+    background-color: #ff3f53;
+    border: 1px solid rgba(255, 255, 255, 0.362);
 
   }
   
